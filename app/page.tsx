@@ -243,8 +243,8 @@ export default function RezenharApp() {
         </Card>
 
         {showRules && <RulesModal />}
+        <ExternalScript />
       </div>
-      <ExternalScript />
     </div>
   )
 }
