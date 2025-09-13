@@ -22,6 +22,19 @@ export default function RootLayout({
       <body className={`font-sans dark ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
+        {/* Script do MoneyTag */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var mt = document.createElement('script');
+                mt.src = 'https://cdn.moneytag.io/moneytag.js';
+                mt.async = true;
+                document.body.appendChild(mt);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   )
