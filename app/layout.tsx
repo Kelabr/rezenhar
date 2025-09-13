@@ -7,9 +7,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Eu Nunca - Jogo de Festa",
-  description: "Jogo Eu Nunca para festas com amigos",
-  generator: "v0.app",
+  title: "Rezenhar",
+  description: "Jogo Para festas com amigos",
 }
 
 export default function RootLayout({
