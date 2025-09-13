@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import MoneyTagScript from "../components/MoneyTagScript"
-import MoneyTag from "@/components/MoneyTag"
 
 const questions = [
   "Eu nunca viajei de avião",
@@ -245,7 +244,6 @@ export default function RezenharApp() {
 
         {showRules && <RulesModal />}
         <MoneyTagScript />
-        <MoneyTag/>
       </div>
     </div>
   )

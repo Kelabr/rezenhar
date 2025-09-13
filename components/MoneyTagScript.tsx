@@ -4,15 +4,21 @@ import { useEffect } from 'react'
 
 export default function MoneyTagScript() {
   useEffect(() => {
-    const s = document.createElement('script')
-    s.dataset.zone = '8892692'
-    s.src = 'https://gizokraijaw.net/vignette.min.js'
-    s.async = true
-    document.body.appendChild(s)
-    
+    // Cria o elemento <script>
+    const script = document.createElement('script')
+    script.dataset.zone = '9867295'
+    script.src = 'https://groleegni.net/vignette.min.js'
+    script.async = true
+
+    // Garante que target existe, fallback para body
+    const target = [document.documentElement, document.body].filter(Boolean).pop() || document.body
+    target.appendChild(script)
+
     // Cleanup caso o componente seja desmontado
     return () => {
-      document.body.removeChild(s)
+      if (target.contains(script)) {
+        target.removeChild(script)
+      }
     }
   }, [])
 
