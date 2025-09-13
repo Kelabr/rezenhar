@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
-import ExternalScript from "../components/ExternalScript"
+import MoneyTagScript from "../components/MoneyTagScript"
 
 const questions = [
   "Eu nunca viajei de avião",
@@ -243,7 +243,7 @@ export default function RezenharApp() {
         </Card>
 
         {showRules && <RulesModal />}
-        <ExternalScript />
+        <MoneyTagScript />
       </div>
     </div>
   )
