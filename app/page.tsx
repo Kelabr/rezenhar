@@ -4,44 +4,45 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
+import ExternalScript from "./components/ExternalScript"
 
 const questions = [
-  "Rezenhar viajei de avião",
-  "Rezenhar menti sobre minha idade",
-  "Rezenhar dancei em público",
-  "Rezenhar comi comida que caiu no chão",
-  "Rezenhar fingi estar doente para faltar ao trabalho",
-  "Rezenhar cantei no chuveiro",
-  "Rezenhar dormi em uma aula",
-  "Rezenhar esqueci o nome de alguém logo após ser apresentado",
-  "Rezenhar usei roupas do avesso sem perceber",
-  "Rezenhar falei sozinho em voz alta",
-  "Rezenhar chorei assistindo um filme",
-  "Rezenhar menti sobre ter lido um livro",
-  "Rezenhar fingi entender uma piada",
-  "Rezenhar comi pizza no café da manhã",
-  "Rezenhar stalkeei alguém nas redes sociais",
-  "Rezenhar fingi estar ocupado para evitar compromissos",
-  "Rezenhar usei o telefone de outra pessoa sem permissão",
-  "Rezenhar menti sobre meu peso",
-  "Rezenhar fingi gostar de um presente",
-  "Rezenhar dormi com a TV ligada",
-  "Rezenhar comi algo que estava vencido",
-  "Rezenhar fingi estar feliz quando estava triste",
-  "Rezenhar usei a mesma roupa dois dias seguidos",
-  "Rezenhar menti sobre ter feito exercícios",
-  "Rezenhar fingi estar doente para ganhar atenção",
-  "Rezenhar comi doce escondido",
-  "Rezenhar fingi não ver uma mensagem",
-  "Rezenhar menti sobre minha profissão",
-  "Rezenhar fingi entender um idioma estrangeiro",
-  "Rezenhar comi na cama",
-  "Rezenhar fingi estar dormindo",
-  "Rezenhar menti sobre ter dinheiro",
-  "Rezenhar fingi gostar de uma música",
-  "Rezenhar usei roupas íntimas furadas",
-  "Rezenhar fingi estar ocupado no telefone",
-  "Rezenhar comi algo que encontrei no fundo da bolsa",
+  "Eu nunca viajei de avião",
+  "Eu nunca menti sobre minha idade",
+  "Eu nunca dancei em público",
+  "Eu nunca comi comida que caiu no chão",
+  "Eu nunca fingi estar doente para faltar ao trabalho",
+  "Eu nunca cantei no chuveiro",
+  "Eu nunca dormi em uma aula",
+  "Eu nunca esqueci o nome de alguém logo após ser apresentado",
+  "Eu nunca usei roupas do avesso sem perceber",
+  "Eu nunca falei sozinho em voz alta",
+  "Eu nunca chorei assistindo um filme",
+  "Eu nunca menti sobre ter lido um livro",
+  "Eu nunca fingi entender uma piada",
+  "Eu nunca comi pizza no café da manhã",
+  "Eu nunca stalkeei alguém nas redes sociais",
+  "Eu nunca fingi estar ocupado para evitar compromissos",
+  "Eu nunca usei o telefone de outra pessoa sem permissão",
+  "Eu nunca menti sobre meu peso",
+  "Eu nunca fingi gostar de um presente",
+  "Eu nunca dormi com a TV ligada",
+  "Eu nunca comi algo que estava vencido",
+  "Eu nunca fingi estar feliz quando estava triste",
+  "Eu nunca usei a mesma roupa dois dias seguidos",
+  "Eu nunca menti sobre ter feito exercícios",
+  "Eu nunca fingi estar doente para ganhar atenção",
+  "Eu nunca comi doce escondido",
+  "Eu nunca fingi não ver uma mensagem",
+  "Eu nunca menti sobre minha profissão",
+  "Eu nunca fingi entender um idioma estrangeiro",
+  "Eu nunca comi na cama",
+  "Eu nunca fingi estar dormindo",
+  "Eu nunca menti sobre ter dinheiro",
+  "Eu nunca fingi gostar de uma música",
+  "Eu nunca usei roupas íntimas furadas",
+  "Eu nunca fingi estar ocupado no telefone",
+  "Eu nunca comi algo que encontrei no fundo da bolsa",
 ]
 
 export default function RezenharApp() {
@@ -243,6 +244,7 @@ export default function RezenharApp() {
 
         {showRules && <RulesModal />}
       </div>
+      <ExternalScript />
     </div>
   )
 }
